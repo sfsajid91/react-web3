@@ -6,8 +6,8 @@ import { Toaster } from 'react-hot-toast';
 export default function App() {
     useEffect(() => {
         console.log(
-            '%cHello, Fuck You',
-            'color: blue; background: white; font-size: 30px; font-weight: bold;',
+            '%cHello, Do not paste anything here unless you know what you are doing.',
+            'color: red; background: white; font-size: 16px; font-weight: bold;',
         );
     }, []);
 

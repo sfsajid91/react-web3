@@ -105,6 +105,15 @@ export default function Transactions() {
                     })}
 
                 {error && <p className="text-center text-red-500">{error}</p>}
+
+                {
+                    // Show a message if there are no transactions
+                    !loading && transactions.length === 0 && (
+                        <p className="text-center text-gray-500">
+                            No transactions yet. Start sending or receiving
+                        </p>
+                    )
+                }
             </div>
         </section>
     );
